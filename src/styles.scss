@@ -1,0 +1,122 @@
+@use 'tailwindcss/base';
+@use 'tailwindcss/components';
+@use 'tailwindcss/utilities';
+
+:root {
+  --tobacco: #A8926F;
+  --vanilla: #EAE0C9;
+  --mahogany: #4A3C2F;
+  --mountain: #9E9689;
+  --sand: #C2B599;
+  --moss: #2C3424;
+  --cypress: #4C583E;
+  --cedar: #959581;
+  --olive: #768064;
+  --aloe: #DADEC2;
+}
+
+/* Estilos base */
+body {
+  font-family: 'Merriweather', serif;
+  background-color: var(--vanilla);
+  color: var(--mahogany);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Estilos vintage */
+.vintage-border {
+  border: 1px solid var(--tobacco);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.vintage-card {
+  background-color: white;
+  border: 1px solid var(--tobacco);
+  box-shadow: 3px 3px 0px rgba(74, 60, 47, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.vintage-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0px rgba(74, 60, 47, 0.25);
+}
+
+.vintage-texture {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23A8926F' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='m0 40l40-40h-40v40zm40 0v-40h-40l40 40z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.vintage-header {
+  color: var(--mahogany);
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid rgba(76, 88, 62, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.chat-bubble-user {
+  background-color: var(--tobacco);
+  color: var(--vanilla);
+  border-radius: 18px 18px 0 18px;
+  padding: 12px 16px;
+  box-shadow: 2px 2px 0px rgba(74, 60, 47, 0.15);
+}
+
+.chat-bubble-assistant {
+  background-color: var(--vanilla);
+  color: var(--mahogany);
+  border-radius: 18px 18px 18px 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(74, 60, 47, 0.2);
+  box-shadow: 2px 2px 0px rgba(74, 60, 47, 0.1);
+}
+
+/* Clases de utilidad */
+.text-tobacco { color: var(--tobacco); }
+.text-vanilla { color: var(--vanilla); }
+.text-mahogany { color: var(--mahogany); }
+.text-mountain { color: var(--mountain); }
+.text-sand { color: var(--sand); }
+.text-moss { color: var(--moss); }
+.text-cypress { color: var(--cypress); }
+.text-cedar { color: var(--cedar); }
+.text-olive { color: var(--olive); }
+.text-aloe { color: var(--aloe); }
+
+.bg-tobacco { background-color: var(--tobacco); }
+.bg-vanilla { background-color: var(--vanilla); }
+.bg-mahogany { background-color: var(--mahogany); }
+.bg-mountain { background-color: var(--mountain); }
+.bg-sand { background-color: var(--sand); }
+.bg-moss { background-color: var(--moss); }
+.bg-cypress { background-color: var(--cypress); }
+.bg-cedar { background-color: var(--cedar); }
+.bg-olive { background-color: var(--olive); }
+.bg-aloe { background-color: var(--aloe); }
+
+.border-tobacco { border-color: var(--tobacco); }
+.border-vanilla { border-color: var(--vanilla); }
+.border-mahogany { border-color: var(--mahogany); }
+.border-mountain { border-color: var(--mountain); }
+.border-sand { border-color: var(--sand); }
+.border-moss { border-color: var(--moss); }
+.border-cypress { border-color: var(--cypress); }
+.border-cedar { border-color: var(--cedar); }
+.border-olive { border-color: var(--olive); }
+.border-aloe { border-color: var(--aloe); }
+
+/* Material Design overrides */
+.mat-mdc-button {
+  font-family: 'Merriweather', serif !important;
+}
+
+.mat-mdc-form-field {
+  font-family: 'Merriweather', serif !important;
+}
+
+.mat-mdc-card {
+  font-family: 'Merriweather', serif !important;
+}
