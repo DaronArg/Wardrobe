@@ -8,7 +8,7 @@ import { MatFormFieldModule } from "@angular/material/form-field"
 import { MatChipsModule } from "@angular/material/chips"
 import { MatIconModule } from "@angular/material/icon"
 import { IconComponent } from "../../components/icon/icon.component"
-import type { DataService } from "../../services/data.service"
+import  { DataService } from "../../services/data.service"
 import type { Outfit, Prenda } from "../../models/types"
 import { Subject, takeUntil, combineLatest } from "rxjs"
 

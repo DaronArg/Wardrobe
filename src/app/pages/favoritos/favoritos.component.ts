@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common"
 import { MatCardModule } from "@angular/material/card"
 import { MatTabsModule } from "@angular/material/tabs"
 import { MatChipsModule } from "@angular/material/chips"
-import type { DataService } from "../../services/data.service"
+import  { DataService } from "../../services/data.service"
 import type { Prenda, Outfit } from "../../models/types"
 import { Subject, takeUntil, combineLatest } from "rxjs"
 

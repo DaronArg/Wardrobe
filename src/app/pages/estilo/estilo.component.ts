@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common"
 import { MatCardModule } from "@angular/material/card"
 import { MatChipsModule } from "@angular/material/chips"
 import { MatProgressBarModule } from "@angular/material/progress-bar"
-import type { DataService } from "../../services/data.service"
+import  { DataService } from "../../services/data.service"
 import type { PreferenciasEstilo, Estadisticas } from "../../models/types"
 import { Subject, takeUntil } from "rxjs"
 

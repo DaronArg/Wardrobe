@@ -1,6 +1,6 @@
 import { Component } from "@angular/core"
 import { CommonModule } from "@angular/common"
-import { RouterModule, type Router } from "@angular/router"
+import { RouterModule,  Router } from "@angular/router"
 import { IconComponent } from "../icon/icon.component"
 
 @Component({

@@ -9,7 +9,7 @@ import { MatTabsModule } from "@angular/material/tabs"
 import { MatSlideToggleModule } from "@angular/material/slide-toggle"
 import { MatDividerModule } from "@angular/material/divider"
 import { IconComponent } from "../../components/icon/icon.component"
-import type { DataService } from "../../services/data.service"
+import  { DataService } from "../../services/data.service"
 import type { ConfiguracionUsuario } from "../../models/types"
 import { Subject, takeUntil } from "rxjs"
 
